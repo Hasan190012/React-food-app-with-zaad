@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+.logo{
+    
+    font-size: 30px;
+    color: #154eec;
+    transition: color 0.3s ease;
+    &:hover{
+        color: #7377f0;
+    }
+    font-weight: 800;
+
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+.links a{
+
+    margin-right: 20px;
+    color: #302f2f;
+    transition: color 0.3s ease;
+    &:hover{
+        color: #a5baf6;
+    }
+    font-size: 24px;
+    font-weight: 500;
+}
+.cart{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #154eec;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+.card {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0,0.7),
+              rgba(0, 0, 0)50%,
+              rgba(0, 0, 0,0.1));
+    color: white;
+    padding: 7px 0;
+    border-radius: 0px 0px 8px 8px;
+}
+.card span{
+    font-size: 1rem;
+    margin: 13px;
+}
+.btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color:  #154eec;
+    padding: 0px 10px;
+    color: white;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+
+
+}
+.btn-secondary {
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color:  #b01212;
+    padding: 0px 10px;
+    color: white;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.cart-container{
+    background-color: #fff;
+    box-shadow: 0 0 010px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    place-items: center;
+}
+.cart-products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    border-right: 1px solid #e0dddd;
+}
+.cart-product{
+    padding: 10px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-top: 1px solid  #e0dddd;
+    place-content: center;
+}
+.cart-product img{
+    width: 50px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid  #e0dddd;
+    padding: 10px;
+    
+}
+.cart-product span{
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cart-title-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.cart-title-img * {
+    padding: 0 15px;
+}
+.delete { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.total-price{
+    border-top: 1px solid  #e0dddd;
+}
+.payment-card{
+    border: 1px solid  #e0dddd;
+    border-radius: 15px;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.payment-card:hover, .payment-card.selected{
+    background-color: #a5baf6;
+    border-color: #0041f3;
+}
+.form-control{
+    width: 76%;
+    margin: 0 12px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid  #e0dddd;
+    font-size: 20px;
+
+}
+.btn-proceed{
+    width: 92%;
+    margin: 10px 12px;
+    padding: 20px;
+    background-color:  #154eec;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-proceed:hover{
+    background-color:  #3e6ff5;
+}
+.footer{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
